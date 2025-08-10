@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <header>
+            <div class="container header-content">
+                <div class="logo-container">
+                    <a href="index.html" class="logo-link"><img src="images/logo.PNG" alt="ANTARCTICO MARITIME Logo" class="logo"></a>
+                    <h1><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></h1>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
+            </div>
+        </header>
+        <section id="hero">
+            <div class="container">
+                <h1>Welcome to <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></h1>
+                <p>Your reliable partner in maritime services</p>
+                
+            </div>
+        </section>
+    </div>
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="repairing.html">Repairing</a></li>
+                <li><a href="chandling.html">Chandling</a></li>
+                <li><a href="port-services.html">Port of services</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('nav-open');
+            });
+        });
+    </script>
+</body>
+</html>

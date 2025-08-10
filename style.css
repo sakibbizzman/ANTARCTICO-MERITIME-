@@ -1,0 +1,502 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.hero-wrapper {
+    background: url('bg.jpg') no-repeat center center/cover;
+    background-position: center center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo {
+    height: 150px; /* Made bigger */
+    
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.contact-info-header {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-info-header p {
+    margin: 0;
+}
+
+.contact-info-header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info-header a:hover {
+    text-decoration: underline;
+}
+
+/* Main Navigation */
+.main-nav {
+    background: #005f73;
+    padding: 1rem 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #e0f7fa;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+#hero h1,
+#hero p {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 20px #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block; /* To apply padding and border correctly */
+    margin-bottom: 1rem; /* Add some space between h1 and p */
+}
+
+#hero p {
+    margin-top: 0; /* Remove extra top margin for p */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #005f73;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #00343d;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* About Us */
+#about {
+    background: #f4f4f4;
+}
+
+#about-content p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+#about-content ul {
+    list-style: disc inside;
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+#about-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+/* Services */
+
+#about-content p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+#about-content ul {
+    list-style: disc inside;
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+#about-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+/* Services */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#product-content .product-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 25px; /* Spacing between items */
+}
+
+#product-content .product-list > li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#product-content .product-list > li:hover {
+    transform: translateY(-5px);
+}
+
+#product-content .product-list > li h3 {
+    color: #005f73;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Increased font size */
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+#product-content .product-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#product-content .product-list ul li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #555;
+    font-weight: normal; /* Ensure nested items are not bolded */
+}
+
+/* Contact */
+#contact {
+    background: #f4f4f4;
+}
+
+.contact-details-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid #eee;
+}
+
+.contact-item:last-child {
+    border-right: none;
+}
+
+.contact-item h3 {
+    color: #005f73;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.contact-item a {
+    color: #005f73;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #005f73;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #00343d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+    display: none; /* Hidden by default on larger screens */
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .container.header-content {
+        flex-direction: row; /* Keep row for header content */
+        justify-content: space-between; /* Space out logo and toggle */
+        align-items: center;
+    }
+
+    .logo-container {
+        margin-bottom: 0; /* Remove margin */
+    }
+
+    .contact-info-header {
+        margin-top: 1rem;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .main-nav {
+        display: none; /* Hide navigation by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute; /* Position relative to parent */
+        top: 100px; /* Adjust based on header height */
+        left: 0;
+        background: #005f73; /* Same as nav background */
+        z-index: 999; /* Ensure it's on top */
+        max-height: calc(100vh - 100px); /* Max height to prevent overflow */
+        overflow-y: auto; /* Enable scrolling for long menus */
+        transition: transform 0.3s ease-out; /* Smooth slide effect */
+        transform: translateY(-100%); /* Start off-screen above */
+    }
+
+    .main-nav.nav-open {
+        display: flex; /* Show navigation when nav-open class is present */
+        transform: translateY(0); /* Slide into view */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero {
+        padding: 5rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack services in a single column */
+    }
+
+    .contact-details-bar {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .contact-item:last-child {
+        border-bottom: none;
+    }
+}
+
+/* For screens smaller than 480px (smaller phones) */
+@media (max-width: 480px) {
+    .hero-wrapper {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .logo {
+        height: 80px;
+    }
+
+    .logo-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-header {
+        font-size: 0.9rem;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+      .cta-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        white-space: normal;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
